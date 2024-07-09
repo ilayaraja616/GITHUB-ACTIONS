@@ -17,7 +17,7 @@ jobs:
         java-version: '21'
 
     - name: compile java
-      run: javac helloworld.java
+      run: javac HelloWorld.java
 
     - name: run the program
-      run: java helloworld.java
+      run: java HelloWorld.java
