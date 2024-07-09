@@ -1,0 +1,23 @@
+name: sample java program
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout repository
+      uses: actions/checkout@v4
+
+    - name: install java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin' # See 'Supported distributions' for available options
+        java-version: '21'
+
+    - name: compile java
+      run: javac helloworld.java
+
+    - name: run the program
+      run: java helloworld.java
