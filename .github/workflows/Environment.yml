@@ -1,0 +1,17 @@
+name: Example Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      MY_VARIABLE: 'some-value'
+    
+    steps:
+      - name: Print environment variable
+        run: echo "The value of MY_VARIABLE is $MY_VARIABLE"
