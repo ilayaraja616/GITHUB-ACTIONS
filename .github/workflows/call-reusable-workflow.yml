@@ -7,4 +7,4 @@ on:
 
 jobs:
   call-reusable-workflow:
-    uses: your-org/your-repo/.github/workflows/reusable-workflow.yml@main
+    uses: ilayaraja616/GITHUB-ACTIONS/.github/workflows/reusable-workflow.yml@main
