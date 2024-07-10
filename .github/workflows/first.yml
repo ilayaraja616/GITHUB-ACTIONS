@@ -7,4 +7,7 @@ jobs:
 
     steps:
     - name: printing hello world
-      run: echo "hello world"
+      run: |
+          echo "hello world"
+          echo "hello humans"
+          echo "hello aliens"
