@@ -1,0 +1,11 @@
+name: Step-Level Conditional Execution
+
+on: [push]
+
+jobs:
+  example_job:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo "This job runs only on push events"
