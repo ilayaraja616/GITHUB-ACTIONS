@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      MY_VARIABLE: 'some-value'
+      MY_VARIABLE: 'Hello World'
     
     steps:
       - name: Print environment variable
